@@ -9,7 +9,7 @@ const LoadablePage = () => {
   const [hasComponentB, setHasComponentB] = useState(false);
   return (
     <div className="container">
-      <h1>Welcome to Gatsby v3 Loadable</h1>
+      <h1>Welcome to Gatsby v4 Loadable</h1>
       <section>
         <h3>Demo for loadable component</h3>
         <div>

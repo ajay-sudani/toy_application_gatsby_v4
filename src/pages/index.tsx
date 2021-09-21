@@ -31,7 +31,7 @@ const IndexPage = () => {
 
   return (
     <div className="container">
-      <h1>Welcome to Gatsby v3 Toys Application</h1>
+      <h1>Welcome to Gatsby v4 Toys Application</h1>
       <section>
         <Toys data={data.allContentfulToy.edges}></Toys>
       </section>
