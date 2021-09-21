@@ -102,3 +102,24 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+# Typescript v1 declaration files
+typings/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variables file
+.env
+.env.*
+
+# gatsby files
+.cache/
+public
+
+# Mac files
+.DS_Store
