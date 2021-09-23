@@ -24,19 +24,3 @@ export const UserPosts = ({ data }) => {
     </section>
   );
 };
-
-export const query = graphql`
-  query {
-    allPosts: allHashnodePost {
-      edges {
-        node {
-          id
-          title
-          dateAdded(formatString: "DD MMMM, YYYY")
-          brief
-          slug
-        }
-      }
-    }
-  }
-`;
