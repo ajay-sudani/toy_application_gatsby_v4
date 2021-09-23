@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 const { CONTENTFUL_SPACE_ID, CONTENTFUL_ACCESS_TOKEN } = process.env;
 
@@ -43,6 +43,12 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: "gatsby-source-users",
+      options: {
+        userName: "dillion",
+      },
     },
   ],
 };

@@ -1,0 +1,12 @@
+{
+  "name": "gatsby-source-users",
+  "description": "Gatsby plugin to fetch users details.",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "graphql-tools": "latest",
+    "invariant": "latest",
+    "lodash": "latest",
+    "node-fetch": "latest",
+    "sinon": "latest"
+  }
+}
