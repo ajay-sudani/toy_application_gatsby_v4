@@ -1,6 +1,6 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import UserPosts from "../components/userPosts";
+import UserPosts from "../components/user-posts";
 
 const UserPostsPage = ({ data }) => {
   const allPosts = data?.allPosts?.edges.map(({ node }) => node) || [];
