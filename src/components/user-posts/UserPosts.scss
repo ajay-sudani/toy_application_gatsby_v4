@@ -1,0 +1,18 @@
+.post-label {
+  text-align:  center;
+  color: blue;
+  margin: 40px;
+  font-size: 24px;
+}
+
+.posts-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+
+  .post {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f1f1;
+  }
+}
