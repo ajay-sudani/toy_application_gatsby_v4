@@ -22,13 +22,13 @@
     "gatsby-plugin-gatsby-cloud": "^4.0.0-zz-next.1",
     "gatsby-plugin-image": "^2.0.0-zz-next.1",
     "gatsby-plugin-loadable-components-ssr": "^2.2.1-beta.2",
-    "gatsby-plugin-react-helmet": "^5.0.0-zz-next.1",
-    "gatsby-plugin-sass": "^5.0.0-zz-next.1",
+    "gatsby-plugin-react-helmet": "^5.0.0-zz-next.8",
+    "gatsby-plugin-sass": "^5.0.0-zz-next.8",
     "gatsby-plugin-sharp": "^4.0.0-zz-next.1",
-    "gatsby-plugin-styled-components": "^5.0.0-zz-next.1",
+    "gatsby-plugin-styled-components": "^5.0.0-zz-next.8",
     "gatsby-source-contentful": "^6.0.0-zz-next.1",
     "gatsby-source-filesystem": "^4.0.0-zz-next.1",
-    "gatsby-transformer-sharp": "^4.0.0-zz-next.1",
+    "gatsby-transformer-sharp": "^4.0.0-zz-next.8",
     "gbimage-bridge": "^0.1.4",
     "graphql-request": "^3.5.0",
     "react": "^17.0.1",
@@ -36,12 +36,12 @@
     "react-helmet": "^6.1.0",
     "react-intersection-observer": "^8.32.1",
     "react-is": "^17.0.2",
-    "sass": "^1.39.0",
+    "sass": "^1.42.1",
     "styled-components": "^5.3.1"
   },
   "devDependencies": {
-    "@types/node": "^16.7.10",
-    "@types/react": "^17.0.20",
+    "@types/node": "^16.9.6",
+    "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9"
   }
 }
