@@ -1,7 +1,7 @@
 const { request, gql } = require("graphql-request");
 
 exports.sourceNodes = async (
-  { actions, createContentDigest },
+  { actions, createNodeId, createContentDigest },
   { userName }
 ) => {
   const API_ENDPOINT = "https://api.hashnode.com/";
@@ -32,11 +32,13 @@ exports.sourceNodes = async (
 
   for (let i = 0; i < posts.length; i++) {
     const post = posts[i];
+    // createNode function can be used to create the node itself, so that we can later use it in GraphQL queries.
     actions.createNode({
-      id: post._id,
+      // Each node needs a unique identifier. With createNodeId function, we can also make sure that these identifiers are unique across all nodes, even those from other sources
+      id: createNodeId(post._id),
       internal: {
         type: `HashnodePost`,
-        content: JSON.stringify(post), // https://www.gatsbyjs.com/docs/reference/graphql-data-layer/node-interface/#content
+        // To verify that the content has or hasn’t changed.
         contentDigest: createContentDigest(post),
       },
       ...post,
