@@ -55,6 +55,7 @@
     "axe-core": "^4.3.3",
     "cypress": "^8.5.0",
     "cypress-axe": "^0.13.0",
+    "gatsby-plugin-dts-css-modules": "^2.1.1",
     "start-server-and-test": "^1.14.0",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.3"

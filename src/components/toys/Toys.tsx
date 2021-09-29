@@ -1,9 +1,8 @@
 import * as React from "react";
 import ToyDetails from "./toyDetails/ToyDetails";
 import { IToyDetails } from "../../interfaces/ToyDetails";
-import "./Toys.scss";
+import * as toysStyles from "./Toys.module.scss";
 
-// markup
 const Toys = ({
   data,
 }: {
@@ -12,7 +11,7 @@ const Toys = ({
   }[];
 }) => {
   return (
-    <div className="toys-container">
+    <div className={toysStyles.toysContainer}>
       {data.map((toy: { node: IToyDetails }) => (
         <ToyDetails key={toy.node.id} toy={toy.node}></ToyDetails>
       ))}

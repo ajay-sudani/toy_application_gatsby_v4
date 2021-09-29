@@ -51,6 +51,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-typescript-checker",
-    "gatsby-plugin-webpack-bundle-analyser-v2"
+    "gatsby-plugin-webpack-bundle-analyser-v2",
+    "gatsby-plugin-dts-css-modules"
   ],
 };

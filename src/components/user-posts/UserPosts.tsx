@@ -1,14 +1,14 @@
 import * as React from "react";
-import "./UserPosts.scss";
 import { IUserPost } from "../../interfaces/UserPosts";
+import * as userPostsStyles from "./UserPosts.module.scss";
 
 export const UserPosts = ({ data }: { data: IUserPost[] }) => {
   return (
     <section>
-      <p className="post-label">User posts</p>
-      <div className="posts-container">
+      <p className={userPostsStyles.postLabel}>User posts</p>
+      <div className={userPostsStyles.postsContainer}>
         {data.map((p) => (
-          <div key={p.id} className="post">
+          <div key={p.id} className={userPostsStyles.post}>
             <p>
               <b>Title - </b> {p.title}
             </p>
