@@ -2,13 +2,22 @@ import React from "react";
 import { InView } from "react-intersection-observer";
 import { graphql } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
-import { getImage } from "gatsby-plugin-image";
+import { getImage, ImageDataLike } from "gatsby-plugin-image";
 import { convertToBgImage } from "gbimage-bridge";
 import Meta from "../components/meta/Meta";
+import { IToyDetails } from "../interfaces/ToyDetails";
 import "./toy-details.scss";
 
+interface IProps {
+  data: {
+    contentfulToy: IToyDetails;
+  };
+  pageContext: {
+    backgroundImage: ImageDataLike;
+  };
+}
 // markup
-const ToyDetails = ({ data, pageContext }) => {
+const ToyDetails = ({ data, pageContext }: IProps) => {
   const imageData = convertToBgImage(getImage(pageContext.backgroundImage));
   const { contentfulToy: toy } = data;
 
@@ -18,7 +27,7 @@ const ToyDetails = ({ data, pageContext }) => {
         title="Toy Application"
         description="This is Toy application created using Gatsby V4"
       ></Meta>
-      <BackgroundImage {...imageData} alt="background image" role="main">
+      <BackgroundImage {...imageData} role="main">
         <div className="toy-details-container">
           <div className="image-container">
             <InView>

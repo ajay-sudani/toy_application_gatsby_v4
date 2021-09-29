@@ -1,8 +1,8 @@
 import * as React from "react";
-import { graphql } from "gatsby";
 import "./UserPosts.scss";
+import { IUserPost } from "../../interfaces/UserPosts";
 
-export const UserPosts = ({ data }) => {
+export const UserPosts = ({ data }: { data: IUserPost[] }) => {
   return (
     <section>
       <p className="post-label">User posts</p>

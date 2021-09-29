@@ -1,10 +1,11 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import { InView } from "react-intersection-observer";
+import { IToyDetails } from "../../../interfaces/ToyDetails";
 import "./ToyDetails.scss";
 
 // markup
-const ToyDetails = ({ toy }) => {
+const ToyDetails = ({ toy }: { toy: IToyDetails }) => {
   return (
     <div className="toy-content">
       <div className="image-container">
