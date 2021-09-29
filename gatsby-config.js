@@ -50,5 +50,7 @@ module.exports = {
         userName: "dillion",
       },
     },
+    "gatsby-plugin-typescript-checker",
+    "gatsby-plugin-webpack-bundle-analyser-v2"
   ],
 };
