@@ -15,7 +15,9 @@
     "clean": "gatsby clean",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open"
+    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@loadable/component": "^5.15.0",
@@ -48,11 +50,19 @@
     "styled-components": "^5.3.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/builder-webpack5": "^6.3.8",
+    "@storybook/manager-webpack5": "^6.3.8",
+    "@storybook/react": "^6.3.8",
     "@testing-library/cypress": "^8.0.1",
     "@types/node": "^16.9.6",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
     "axe-core": "^4.3.3",
+    "babel-loader": "^8.2.2",
     "cypress": "^8.5.0",
     "cypress-axe": "^0.13.0",
     "gatsby-plugin-dts-css-modules": "^2.1.1",
